@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlesTipoVista.Views.Label_Etiqueta"
+             Title="Label_Etiqueta">
+    
+    <VerticalStackLayout HorizontalOptions="Center">
+
+        <Label Padding="10"
+               HorizontalOptions="Center"
+               TextColor="Purple"
+               TextType="Html"
+               >
+            Curso &lt;strong style=&quot;color:red&quot;&gt;.NET MAUI&lt;/strong&gt;
+        </Label>
+
+        <Label MaxLines="2"
+               LineHeight="1.5"
+            Text="Este es un curso totalmente gratis dirigido &#10;a todas las personas amantes &#10;del desarrollo de apps &#10;con tecnologias de microsoft"
+               />
+
+        <Label
+               TextColor="#800080"
+               CharacterSpacing="5"
+               HorizontalOptions="Center"
+               TextDecorations="Underline"
+               TextTransform="Uppercase">
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span Text="Video Aqui" FontAttributes="Italic" TextDecorations="Strikethrough">
+                        <Span.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding TapCommand}"/>
+                        </Span.GestureRecognizers>
+                    </Span>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+
+        <!--<Label>
+            <Label.Text>
+                Fila 1 
+                Fila 2
+                Fila 3
+            </Label.Text>
+        </Label>-->
+    </VerticalStackLayout>
+</ContentPage>

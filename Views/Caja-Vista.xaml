@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlesTipoVista.Views.Caja_Vista"
+             Title="Caja_Vista">
+    <AbsoluteLayout VerticalOptions="Center"
+                    HorizontalOptions="Center">
+        <BoxView HeightRequest="350"
+                 WidthRequest="350"
+                 CornerRadius="350"
+                 Color="Yellow"/>
+        
+        <BoxView HeightRequest="50"
+                 WidthRequest="50"
+                 CornerRadius="50"
+                 AbsoluteLayout.LayoutBounds="0,100,200,50"/>
+        
+        <BoxView HeightRequest="50"
+                 WidthRequest="50"
+                 CornerRadius="50"
+                 AbsoluteLayout.LayoutBounds="150,100,200,50"/>
+        
+        <BoxView HeightRequest="50"
+                 WidthRequest="200"
+                 CornerRadius="50"
+                 AbsoluteLayout.LayoutBounds="80,220,200,50"/>
+        
+    </AbsoluteLayout>
+</ContentPage>

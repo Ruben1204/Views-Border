@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlesTipoVista.Views.Image_Vista"
+             Title="Image_Vista">
+    <ScrollView>
+        <VerticalStackLayout x:Name="Diseñador">
+            <Label Text="Ejemplo de Imagenes!"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"/>
+
+            <HorizontalStackLayout Margin="10">
+                <Image Source="formatpng.png"
+                       WidthRequest="100"
+                       HeightRequest="100"/>
+                <Image Source="formatjpg.jpg"
+                       WidthRequest="100"
+                       HeightRequest="100"/>
+                <Image Source="formatsvg.png"
+                       WidthRequest="100"
+                       HeightRequest="100"/>
+                <Image Source="formatgif.gif"
+                       WidthRequest="100"
+                       HeightRequest="100"/>
+
+            </HorizontalStackLayout>
+
+            <Image Source="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                   WidthRequest="100"
+                   HeightRequest="100"/>
+
+            <Image WidthRequest="100"
+                   HeightRequest="100"
+                   Margin="10">
+                <Image.Source>
+                    <UriImageSource Uri="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                                    CacheValidity="2:00:00:00"/>
+                </Image.Source>
+            </Image>
+
+            <StackLayout WidthRequest="100"
+                     BackgroundColor="Aqua">
+                <Image Source="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    Aspect="Center"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
